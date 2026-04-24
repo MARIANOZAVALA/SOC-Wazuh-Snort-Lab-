@@ -1,0 +1,17 @@
+  <command>
+    <name>restart-wazuh</name>
+    <executable>restart-wazuh</executable>
+  </command>
+
+  <command>
+    <name>firewall-drop</name>
+    <executable>firewall-drop</executable>
+    <timeout_allowed>yes</timeout_allowed>
+  </command>
+
+   <active-response>
+    <command>firewall-drop</command>
+    <location>local</location>
+    <level>10</level>
+    <timeout>600</timeout>
+   </active-response>
